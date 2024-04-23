@@ -37,7 +37,7 @@ const CertifImg: React.FC<CertifImgProps> = ({ altText, imgTitle }) => {
   const image = getImage(imgTitle);
 
   return (
-    <div className="h-[380px] w-fit border border-4 border-[#FD7092] p-2 rounded-3xl">
+    <div className="h-[380px] w-[552px] border-4 border-[#FD7092] p-2 rounded-3xl flex justify-center">
       <Image src={image} alt={altText} className="rounded-3xl h-full w-fit" />
     </div>
   );
