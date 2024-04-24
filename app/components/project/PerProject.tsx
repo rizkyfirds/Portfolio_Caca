@@ -45,38 +45,43 @@ const PerProject: React.FC<PerProjectProps> = ({
   const image = getImage(imgTitle);
   return (
     <div
-      className={`bg-[#FFE5EC] w-[${width}px] p-[24px] pb-[58px] rounded-2xl relative`}
+      className={`bg-[#FFE5EC] w-[300px] lg:w-[${width}px] p-[24px] pb-[65px] rounded-2xl relative`}
     >
       <Image src={image} alt={title} className="w-full mb-[24px]" />
       <p
         className={
-          (width !== 360 ? "text-[32px] " : "text-[24px] ") +
+          (width !== 360 ? "text-[28px] lg:text-[32px] " : "text-[24px] ") +
           "mb-[16px] font-bold"
         }
       >
         {title}
       </p>
 
-      <p className="text-[16px] text-justify mb-[24px]">{desc}</p>
+      <p className="text-[14px] lg:text-[16px] text-justify mb-[24px]">{desc}</p>
       <p
         className={
-          (width !== 360 ? "text-[24px] " : "text-[18px] ") +
+          (width !== 360 ? "text-[18px] lg:text-[24px] " : "text-[18px] ") +
           "mb-[16px] font-semibold"
         }
       >
         Task Done:
       </p>
       {tasks.map((task, index) => (
-        <div key={index} className="flex font-medium gap-x-4 mb-1">
-          <TbPointFilled className="h-fit w-5 my-auto text-lg" />
-          <p className="text-[16px] text-justify">{task}</p>
+        <div key={index} className="flex font-medium mb-1">
+          <TbPointFilled className="h-fit w-4 lg:w-6 text-xl mt-1 mr-2" />
+          <p className="text-[16px] text-justify w-full">{task}</p>
         </div>
       ))}
-      <div className="absolute bottom-0 right-0 m-[24px] pt-[16px]">
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="absolute bottom-0 right-0 m-[14px] pt-[16px]"
+      >
         <div className="bg-[#FD7092] py-[16px] px-[32px] rounded-full">
           <MdOutlineArrowOutward className="text-white" />
         </div>
-      </div>
+      </a>
     </div>
   );
 };

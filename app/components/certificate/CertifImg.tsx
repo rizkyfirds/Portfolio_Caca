@@ -7,6 +7,7 @@ import Certif_ExcelDataPreparation from "../../assets/Certif_ExcelDataPreparatio
 import Certif_NgulikExcelDashboard from "../../assets/Certif_NgulikExcelDashboard.jpg";
 import Certif_NgulikExcelPivotTable from "../../assets/Certif_NgulikExcelPivotTable.jpg";
 import Certif_Humic from "../../assets/Certif_Humic.jpg";
+import { GoArrowUpRight } from "react-icons/go";
 
 interface CertifImgProps {
   altText: string;
@@ -34,11 +35,27 @@ const CertifImg: React.FC<CertifImgProps> = ({ altText, imgTitle }) => {
         return "";
     }
   };
+
+  const handleViewImage = () => {
+    const imageSrc = getImage(imgTitle);
+    const imageUrl = typeof imageSrc === "string" ? imageSrc : imageSrc.src;
+    window.open(imageUrl, "_blank");
+  };
+
   const image = getImage(imgTitle);
 
   return (
-    <div className="h-[380px] w-[552px] border-4 border-[#FD7092] p-2 rounded-3xl flex justify-center">
+    <div className="relative h-[120px] w-[140px] md:h-[200px] md:w-[240px] lg:h-[380px] lg:w-[552px] border-4 border-[#FD7092] p-2 rounded-3xl flex justify-center overflow-hidden">
       <Image src={image} alt={altText} className="rounded-3xl h-full w-fit" />
+      <button
+        className="absolute inset-0 flex items-center justify-center bg-transparent transition-all duration-300 opacity-0 hover:opacity-90 hover:bg-white"
+        onClick={handleViewImage}
+      >
+        <div className="flex bg-[#FD7092] rounded-2xl p-1 font-semibold">
+          <p className="text-white">View</p>
+          <GoArrowUpRight className="text-white my-auto ml-1" />
+        </div>
+      </button>
     </div>
   );
 };

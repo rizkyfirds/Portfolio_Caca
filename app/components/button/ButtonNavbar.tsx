@@ -1,27 +1,40 @@
 import React from "react";
 
-interface ButtonNavbar {
+interface ButtonNavbarProps {
   section: string;
+  setNavbarStat: (section: string) => void;
 }
 
-const ButtonNavbar: React.FC<ButtonNavbar> = ({ section }) => {
+const ButtonNavbar: React.FC<ButtonNavbarProps> = ({
+  section,
+  setNavbarStat,
+}) => {
+  let emoji = "";
+  if (section === "About") {
+    emoji = "👩‍💼";
+  } else if (section === "Skills") {
+    emoji = "💻";
+  } else if (section === "Project") {
+    emoji = "🚀";
+  } else if (section === "Certificate") {
+    emoji = "🎓";
+  } else if (section === "Contact") {
+    emoji = "💌";
+  }
+
+  const handleClick = () => {
+    setNavbarStat(section);
+  };
+
   return (
-    <div className="h-fit rounded-3xl border-2 border-[#FD7092] px-[16px] py-[8px] text-center bg-white">
-      <p className="text-[#FD7092] text-[12px]">
-        {section === "About"
-          ? "👩‍💼"
-          : section === "Skills"
-          ? "💻"
-          : section === "Project"
-          ? "🚀"
-          : section === "Certificate"
-          ? "🎓"
-          : section === "Contact"
-          ? "💌"
-          : ""}{" "}
-        {section}
+    <button
+      onClick={handleClick}
+      className="h-fit rounded-3xl border-2 border-[#FD7092] px-[2px] py-[2px] md:px-[8px] md:py-[4px] lg:px-[16px] lg:py-[8px] text-center bg-white hover:bg-[#FD7092] text-[#FD7092] hover:text-white"
+    >
+      <p className="text-[6px] md:text-[8px] lg:text-[12px]">
+        {emoji} {section}
       </p>
-    </div>
+    </button>
   );
 };
 

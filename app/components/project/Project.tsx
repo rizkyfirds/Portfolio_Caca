@@ -3,12 +3,12 @@ import PerProject from "./PerProject";
 
 const Project = () => {
   return (
-    <div className="py-[80px] px-[156px]">
-      <p className="w-full text-[#FD7092] font-bold text-[148px] text-center mb-[64px]">
+    <div className="py-[24px] px-[15px] lg:px-[156px] lg:py-[80px]">
+      <p className="w-full text-[#FD7092] font-bold text-[47px] lg:text-[148px] text-center mb-[32px] lg:mb-[64px]">
         Project
       </p>
-      <div>
-        <div className="flex justify-center gap-x-[24px] mb-[24px]">
+      <div className="flex lg:flex-col gap-x-[24px] overflow-y-auto">
+        <div className="flex lg:justify-center gap-x-[24px] lg:mb-[24px]">
           <PerProject
             imgTitle="PKM"
             title="Project Visualization"
@@ -34,13 +34,13 @@ const Project = () => {
             ]}
           />
         </div>
-        <div className="flex justify-center gap-x-[24px]">
+        <div className="flex lg:justify-center gap-x-[24px]">
           <PerProject
             imgTitle="heartRate"
             title="Heart Disease Classification"
             width={360}
             desc="In this project, I constructed a classification model utilizing algorithms such as Random Forest, CatBoost, and Decision Tree Classifier. The objective of this model is to categorize individuals based on whether they have heart disease or not."
-            link="https://lookerstudio.google.com/embed/u/0/reporting/6b057950-643f-415f-983b-83992a34d0ac/page/lLnhD"
+            link="https://lookerstudio.google.com/embed/u/0/reporting/e440799e-cdf5-467d-b346-87f5c8f8ffcd/page/p_tu4l1w5p5c"
             tasks={[
               "Data Preprocessing",
               "EDA (Exploratory Data Analysis)",
@@ -59,7 +59,7 @@ const Project = () => {
             machine failures. Additionally, I identified important
             features that determine the likelihood of machine
             failure within this project"
-            link="https://lookerstudio.google.com/embed/u/0/reporting/6b057950-643f-415f-983b-83992a34d0ac/page/lLnhD"
+            link="https://github.com/salsabilaawwaliyyah/Final-Project-Predictive-Maintanance.git"
             tasks={[
               "Data Preprocessing",
               "EDA (Exploratory Data Analysis)",
@@ -78,7 +78,7 @@ const Project = () => {
             recommendation system model provides food recipe
             recommendations based on user preferences,
             utilizing rating data"
-            link="https://lookerstudio.google.com/embed/u/0/reporting/6b057950-643f-415f-983b-83992a34d0ac/page/lLnhD"
+            link="https://github.com/salsabilaawwaliyyah/Food-Recipe-Recommender-System-using-SVD.git"
             tasks={[
               "Data Preprocessing",
               "EDA (Exploratory Data Analysis)",
