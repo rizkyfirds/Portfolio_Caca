@@ -19,8 +19,6 @@ const Contact = () => {
   };
 
   useEffect(() => {
-    console.log("dua, ",state.succeeded)
-
     if (state.succeeded) {
       setFormData({
         name: "",
@@ -28,9 +26,8 @@ const Contact = () => {
         message: ""
       });
       handleSubmit({});
-      console.log("first, ",state.succeeded)
     }
-  }, [state.succeeded]); // Run effect when state.succeeded changes
+  }, [state.succeeded]);
 
   return (
     <div className="py-[24px] px-[15px] lg:px-[156px] lg:py-[80px]">
