@@ -39,7 +39,7 @@ const Navbar: React.FC<NavbarProps> = ({ setNavbarStat }) => {
           >
             <TiThMenuOutline className="text-[12px]" />
             {isClickedMenu ? (
-              <div className="absolute top-0 right-0 mt-8 p-2 rounded-2xl border-2 border-[#FD7092] text-[#FD7092]">
+              <div className="absolute z-10 bg-white top-0 right-0 mt-8 p-2 rounded-2xl border-2 border-[#FD7092] text-[#FD7092]">
                 <ButtonMenuBurger setNavbarStat={setNavbarStat} text="About"/>
                 <ButtonMenuBurger setNavbarStat={setNavbarStat} text="Skills"/>
                 <ButtonMenuBurger setNavbarStat={setNavbarStat} text="Project"/>

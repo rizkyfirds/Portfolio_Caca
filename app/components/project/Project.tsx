@@ -38,7 +38,7 @@ const Project = () => {
           <PerProject
             imgTitle="heartRate"
             title="Heart Disease Classification"
-            width={360}
+            width={400}
             desc="In this project, I constructed a classification model utilizing algorithms such as Random Forest, CatBoost, and Decision Tree Classifier. The objective of this model is to categorize individuals based on whether they have heart disease or not."
             link="https://lookerstudio.google.com/embed/u/0/reporting/e440799e-cdf5-467d-b346-87f5c8f8ffcd/page/p_tu4l1w5p5c"
             tasks={[
@@ -52,7 +52,7 @@ const Project = () => {
           <PerProject
             imgTitle="FinalProject"
             title="Predictive Maintenance Machine Failur"
-            width={360}
+            width={400}
             desc="In this project, I created a Prediction Model using
             various prediction algorithms such as Random Forest
             and Decision Tree. This model aims to predict
@@ -72,7 +72,7 @@ const Project = () => {
           <PerProject
             imgTitle="FoodRecipe"
             title="Food Recipe Recommendation System"
-            width={360}
+            width={400}
             desc="In this project, I developed a recommendation
             system model using the SVD algorithm. This
             recommendation system model provides food recipe

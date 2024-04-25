@@ -45,12 +45,12 @@ const PerProject: React.FC<PerProjectProps> = ({
   const image = getImage(imgTitle);
   return (
     <div
-      className={`bg-[#FFE5EC] w-[300px] lg:w-[${width}px] p-[24px] pb-[65px] rounded-2xl relative`}
+      className={`bg-[#FFE5EC] w-[400px] lg:w-[${width}px] p-[24px] pb-[65px] rounded-2xl relative`}
     >
       <Image src={image} alt={title} className="w-full mb-[24px]" />
       <p
         className={
-          (width !== 360 ? "text-[28px] lg:text-[32px] " : "text-[24px] ") +
+          (width !== 400 ? "text-[28px] lg:text-[32px] " : "text-[24px] ") +
           "mb-[16px] font-bold"
         }
       >
@@ -60,7 +60,7 @@ const PerProject: React.FC<PerProjectProps> = ({
       <p className="text-[14px] lg:text-[16px] text-justify mb-[24px]">{desc}</p>
       <p
         className={
-          (width !== 360 ? "text-[18px] lg:text-[24px] " : "text-[18px] ") +
+          (width !== 400 ? "text-[18px] lg:text-[24px] " : "text-[18px] ") +
           "mb-[16px] font-semibold"
         }
       >
