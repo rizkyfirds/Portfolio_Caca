@@ -13,7 +13,7 @@ const Hero = () => {
             😊 Hello!
           </p>
           <p className="text-[20px] md:text-[35px] lg:text-[64px] font-bold text-[#3A3A3A] font-['Poppins']">
-            I'm Salsabila <br />
+            I am Salsabila <br />
             Awwaliyyah Lestari
           </p>
           <p className="text-[15px] lg:text-[54px] italic font-bold font-['Allan'] text-[#3A3A3A]">
