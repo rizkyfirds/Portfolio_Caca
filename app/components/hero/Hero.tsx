@@ -24,7 +24,7 @@ const Hero = () => {
               command="View Github"
               link="https://github.com/salsabilaawwaliyyah"
             />
-            <ButtonHero command="Resume" link="" />
+            <ButtonHero command="Resume" link="https://drive.google.com/file/d/120tgY5IwsT_MxGeZTFtiuWD0PrFXY6dH/view?usp=sharing" />
           </div>
         </div>
         <div className="h-full">

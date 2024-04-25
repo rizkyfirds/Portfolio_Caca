@@ -51,7 +51,7 @@ const CertifImg: React.FC<CertifImgProps> = ({ altText, imgTitle }) => {
         className="absolute inset-0 flex items-center justify-center bg-transparent transition-all duration-300 opacity-0 hover:opacity-90 hover:bg-white"
         onClick={handleViewImage}
       >
-        <div className="flex bg-[#FD7092] rounded-2xl p-1 font-semibold">
+        <div className="flex bg-[#FD7092] rounded-2xl p-1 font-semibold px-3">
           <p className="text-white">View</p>
           <GoArrowUpRight className="text-white my-auto ml-1" />
         </div>

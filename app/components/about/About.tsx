@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className="py-[24px] px-[15px] lg:px-[150px] lg:py-[80px] w-full text-[15px] lg:text-[40px] grid gap-y-[22px] lg:gap-y-[64px] font-medium text-justify bg-white">
       <p>
-        🌈 Hello, I'm Salsa, a recent graduate from the Bachelor of Informatics
+        🌈 Hello, I am Salsa, a recent graduate from the Bachelor of Informatics
         program at 🎓 Telkom University. I have a strong interest in ❤️ data
         analysis. My skills include statistical analysis, data visualization,
         and proficiency in programming languages such as Python and SQL.
