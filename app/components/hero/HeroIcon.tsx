@@ -6,6 +6,7 @@ import LookerStudio from "../../assets/LookerStudio.svg";
 import Tableu from "../../assets/Tableu.svg";
 import PowerBI from "../../assets/PowerBI.svg";
 import Pandas from "../../assets/Pandas.svg";
+import Excel from "../../assets/Excel.svg";
 import Python from "../../assets/python-5.svg";
 import SQL from "../../assets/SQL.svg";
 
@@ -26,8 +27,8 @@ const HeroIcon: React.FC<HeroIconProps> = ({ icon}) => {
         return Tableu;
       case "PowerBI":
         return PowerBI;
-      case "Pandas":
-        return Pandas;
+      case "Excel":
+        return Excel;
       case "Python":
         return Python;
       case "SQL":

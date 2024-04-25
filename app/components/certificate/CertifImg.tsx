@@ -45,7 +45,7 @@ const CertifImg: React.FC<CertifImgProps> = ({ altText, imgTitle }) => {
   const image = getImage(imgTitle);
 
   return (
-    <div className="relative h-[120px] w-[140px] md:h-[200px] md:w-[240px] lg:h-[380px] lg:w-[552px] border-4 border-[#FD7092] p-2 rounded-3xl flex justify-center overflow-hidden">
+    <div className="relative w-1/2 border-4 border-[#FD7092] p-2 rounded-3xl flex justify-center overflow-hidden">
       <Image src={image} alt={altText} className="rounded-3xl h-full w-fit" />
       <button
         className="absolute inset-0 flex items-center justify-center bg-transparent transition-all duration-300 opacity-0 hover:opacity-90 hover:bg-white"

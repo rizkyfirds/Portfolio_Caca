@@ -46,7 +46,7 @@ const Hero = () => {
               </div>
               <div className="flex justify-between">
                 <HeroIcon icon="PowerBI" />
-                <HeroIcon icon="Pandas" />
+                <HeroIcon icon="Excel" />
               </div>
               <div className="flex justify-between px-2">
                 <HeroIcon icon="Python" />

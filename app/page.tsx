@@ -22,7 +22,7 @@ export default function Home() {
     }
   }, [navbarStatus]);
   return (
-    <main className="h-fit bg-[#FFF8FA]">
+    <main className="h-fit bg-[#FFF8FA] text-[#373737]">
       <Navbar setNavbarStat={setNavbarStatus} />
       <Hero />
       <div id="About">
