@@ -7,7 +7,7 @@ import HeroIcon from "./HeroIcon";
 const Hero = () => {
   return (
     <div className="h-[320px] lg:h-[649px] py-[24px] px-[15px] lg:px-[156px] lg:py-[80px]">
-      <div className="h-full flex justify-center gap-x-[30px] md:gap-x-[120px] lg:gap-x-[229px]">
+      <div className="h-full flex-col lg:flex justify-center gap-x-[30px] md:gap-x-[120px] lg:gap-x-[229px]">
         <div>
           <p className="text-[#FD7092] italic text-[25px] lg:text-[80px] font-bold font-allan">
             😊 Hello!
