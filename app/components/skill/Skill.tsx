@@ -6,10 +6,10 @@ const Skill = () => {
       <div className="bg-[#FFE5EC] w-1/2 lg:w-[549px] p-[15px] lg:p-[40px] rounded-2xl font-bold">
         <p className="text-[20px] lg:text-[40px] mb-[12px] lg:mb-[24px]">Soft Skills</p>
         <div className="text-[12px] lg:text-[24px] grid gap-y-[6px] lg:gap-y-[12px]">
+          <p>💬 Communicative</p>
           <p>🧩 Problem Solving</p>
           <p>🤝 Teamwork</p>
-          <p>💬 Communicative</p>
-          <p>🤔 Critical Thinking</p>
+          <p>🕰️ Time Management</p>
           <p>🎨 Creative</p>
         </div>
       </div>
