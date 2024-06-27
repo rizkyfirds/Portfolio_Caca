@@ -19,7 +19,7 @@ const Hero = () => {
           <p className="text-[15px] lg:text-[54px] italic font-bold font-['Allan'] text-[#3A3A3A]">
             Data Analyst
           </p>
-          <div className="flex gap-x-[4px] lg:gap-x-[16px] mt-4">
+          <div className="flex gap-x-[4px] lg:gap-x-[16px] my-4">
             <ButtonHero
               command="View Github"
               link="https://github.com/salsabilaawwaliyyah"

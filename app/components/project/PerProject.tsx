@@ -45,40 +45,40 @@ const PerProject: React.FC<PerProjectProps> = ({
   const image = getImage(imgTitle);
   return (
     <div
-      className={`bg-[#FFE5EC] w-[400px] lg:w-[${width}px] p-[24px] pb-[65px] rounded-2xl relative`}
+      className={`bg-[#FFE5EC] w-[200px] md:w-[400px] lg:w-[${width}px] p-[12px] lg:p-[24px] pb-[65px] rounded-2xl relative`}
     >
-      <Image src={image} alt={title} className="w-full mb-[24px]" />
+      <Image src={image} alt={title} className="w-full mb-[12px] lg:mb-[24px]" />
       <p
         className={
-          (width !== 400 ? "text-[28px] lg:text-[32px] " : "text-[24px] ") +
-          "mb-[16px] font-bold"
+          (width !== 400 ? "text-[18px] lg:text-[32px] " : "text-[18px] ") +
+          "mb-[12px] font-bold"
         }
       >
         {title}
       </p>
 
-      <p className="text-[14px] lg:text-[16px] text-justify mb-[24px]">{desc}</p>
+      <p className="text-[12px] lg:text-[16px] text-justify mb-[12px]">{desc}</p>
       <p
         className={
-          (width !== 400 ? "text-[18px] lg:text-[24px] " : "text-[18px] ") +
-          "mb-[16px] font-semibold"
+          (width !== 400 ? "text-[16px] lg:text-[24px] " : "text-[18px] ") +
+          "mb-[10px] font-semibold"
         }
       >
         Task Done:
       </p>
       {tasks.map((task, index) => (
         <div key={index} className="flex font-medium mb-1">
-          <TbPointFilled className="h-fit w-4 lg:w-6 text-xl mt-1 mr-2" />
-          <p className="text-[16px] text-justify w-full">{task}</p>
+          <TbPointFilled className="h-fit w-3 lg:w-6 text-sm lg:text-xl mt-1 mr-2" />
+          <p className="text-[12px] lg:text-[16px] text-justify w-full">{task}</p>
         </div>
       ))}
       <a
         href={link}
         target="_blank"
         rel="noopener noreferrer"
-        className="absolute bottom-0 right-0 m-[14px] pt-[16px]"
+        className="absolute bottom-0 right-0 m-[8px] lg:m-[14px] pt-[6px] lg:pt-[16px]"
       >
-        <div className="bg-[#FD7092] py-[16px] px-[32px] rounded-full">
+        <div className="bg-[#FD7092] py-[12px] px-[24px] lg:py-[16px] lg:px-[32px] rounded-full">
           <MdOutlineArrowOutward className="text-white" />
         </div>
       </a>

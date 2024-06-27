@@ -3,7 +3,7 @@ import DescExperience from "./DescExperience";
 const Experience = () => {
   return (
     <div className="py-[24px] px-[15px] lg:px-[156px] lg:py-[80px] bg-white">
-      <p className="w-full text-[#FD7092] font-bold text-[47px] lg:text-[148px] text-center mb-[32px] lg:mb-[64px]">
+      <p className="w-full text-[#FD7092] font-bold text-[47px] lg:text-9xl text-center mb-[32px] lg:mb-[64px]">
         Experience
       </p>
       <DescExperience startDate="Aug 2023" endDate="Dec 2023" company="MSIB Batch 5 at LLDIKTI IV" position="Student Data Processor" desc={["Processing student data such as Tracer Study, PKM, and KIP.","Creating machine learning with Python to merge excel files.", "Developing Tracer Study and PKM visualization dashboard with Google Looker Studio and Spreadsheet"]}/>
