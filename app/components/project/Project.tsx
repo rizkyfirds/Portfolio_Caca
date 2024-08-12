@@ -4,7 +4,7 @@ import PerProject from "./PerProject";
 const Project = () => {
   return (
     <div className="py-[24px] px-[15px] lg:px-[156px] lg:py-[80px]">
-      <p className="w-full text-[#FD7092] font-bold text-[47px] lg:text-9xl text-center mb-[32px] lg:mb-[64px]">
+      <p className="w-full text-[#FD7092] font-bold text-[47px] lg:text-7xl text-center mb-[32px] lg:mb-[64px]">
         Project
       </p>
       <div className="flex lg:flex-col gap-x-[12px] lg:gap-x-[24px] overflow-y-auto">

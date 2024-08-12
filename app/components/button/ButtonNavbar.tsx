@@ -1,4 +1,5 @@
 import React from "react";
+import {motion} from "framer-motion";
 
 interface ButtonNavbarProps {
   section: string;
@@ -27,14 +28,16 @@ const ButtonNavbar: React.FC<ButtonNavbarProps> = ({
   };
 
   return (
-    <button
+    <motion.button
+      whileHover={{ scale: 1.1 }}
+      transition={{type: "spring", stiffness: 400, damping: 10}}
       onClick={handleClick}
-      className="h-fit rounded-3xl border-2 border-[#FD7092] px-[2px] py-[2px] md:px-[8px] md:py-[4px] lg:px-[16px] lg:py-[8px] text-center bg-white hover:bg-[#FD7092] text-[#FD7092] hover:text-white"
+      className="h-fit rounded-3xl border-2 border-[#FD7092] px-[2px] py-[2px] md:px-[8px] md:py-[4px] lg:px-[16px] lg:py-[8px] text-center bg-white hover:bg-[#FD7092] text-[#FD7092] hover:text-white hover:font-semibold"
     >
-      <p className="text-[6px] md:text-[8px] lg:text-[12px]">
+      <p className="text-[6px] md:text-[8px] lg:text-[12px] ">
         {emoji} {section}
       </p>
-    </button>
+    </motion.button>
   );
 };
 

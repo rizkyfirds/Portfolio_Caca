@@ -50,17 +50,17 @@ const PerProject: React.FC<PerProjectProps> = ({
       <Image src={image} alt={title} className="w-full mb-[12px] lg:mb-[24px]" />
       <p
         className={
-          (width !== 400 ? "text-[18px] lg:text-[32px] " : "text-[18px] ") +
+          (width !== 400 ? "text-[14px] lg:text-[22px] " : "text-[14px] ") +
           "mb-[12px] font-bold"
         }
       >
         {title}
       </p>
 
-      <p className="text-[12px] lg:text-[16px] text-justify mb-[12px]">{desc}</p>
+      <p className="text-[10px] lg:text-[14px] text-justify mb-[12px]">{desc}</p>
       <p
         className={
-          (width !== 400 ? "text-[16px] lg:text-[24px] " : "text-[18px] ") +
+          (width !== 400 ? "text-[14px] lg:text-[20px] " : "text-[14px] ") +
           "mb-[10px] font-semibold"
         }
       >
@@ -68,17 +68,17 @@ const PerProject: React.FC<PerProjectProps> = ({
       </p>
       {tasks.map((task, index) => (
         <div key={index} className="flex font-medium mb-1">
-          <TbPointFilled className="h-fit w-3 lg:w-6 text-sm lg:text-xl mt-1 mr-2" />
-          <p className="text-[12px] lg:text-[16px] text-justify w-full">{task}</p>
+          <TbPointFilled className="h-fit w-3 lg:w-6 text-[4px] lg:text-[6px] mr-2" />
+          <p className="text-[10px] lg:text-[14px] text-justify w-full">{task}</p>
         </div>
       ))}
       <a
         href={link}
         target="_blank"
         rel="noopener noreferrer"
-        className="absolute bottom-0 right-0 m-[8px] lg:m-[14px] pt-[6px] lg:pt-[16px]"
+        className="absolute bottom-0 right-0 m-[8px] lg:m-[14px] pt-[6px] lg:pt-[14px]"
       >
-        <div className="bg-[#FD7092] py-[12px] px-[24px] lg:py-[16px] lg:px-[32px] rounded-full">
+        <div className="bg-[#FD7092] py-[12px] px-[24px] lg:py-[14px] lg:px-[32px] rounded-full">
           <MdOutlineArrowOutward className="text-white" />
         </div>
       </a>

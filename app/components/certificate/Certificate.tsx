@@ -6,7 +6,7 @@ const Certificate = () => {
     <div className="py-[24px] lg:py-[80px] bg-white">
       <div className="w-5/6 lg:w-3/5 mx-auto">
 
-      <p className="w-full text-[#FD7092] font-bold text-[47px] lg:text-9xl text-center mb-[32px] lg:mb-[44px]">
+      <p className="w-full text-[#FD7092] font-bold text-[47px] lg:text-7xl text-center mb-[32px] lg:mb-[44px]">
         Certificate
       </p>
       <div className="flex justify-center gap-x-[14px] lg:gap-x-[24px] mb-[16px] lg:mb-[44px]">
