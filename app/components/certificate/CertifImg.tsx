@@ -16,7 +16,6 @@ interface CertifImgProps {
 }
 
 const CertifImg: React.FC<CertifImgProps> = ({ altText, imgTitle }) => {
-  const [isHovered, setIsHovered] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const modalRef = useRef<HTMLDivElement | null>(null);
 
@@ -70,18 +69,14 @@ const CertifImg: React.FC<CertifImgProps> = ({ altText, imgTitle }) => {
   const image = getImage(imgTitle);
 
   return (
-    <div className="relative w-1/2 border-4 border-[#FD7092] p-2 rounded-3xl flex justify-center overflow-hidden">
+    <div className="relative w-[250px] md:w-[400px] lg:w-1/2 border-4 border-[#FD7092] p-2 rounded-3xl flex justify-center overflow-hidden">
       <Image
         src={image}
         alt={altText}
         className="rounded-3xl h-full w-fit"
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
       />
       <button
-        className={`absolute inset-0 flex items-center justify-center bg-transparent transition-all duration-300 ${
-          isHovered ? "opacity-90 bg-white" : "opacity-0"
-        }`}
+        className='absolute inset-0 flex items-center justify-center bg-transparent transition-all duration-300 opacity-0 hover:opacity-90 hover:bg-white'
         onClick={handleViewImage}
       >
         <div className="flex bg-[#FD7092] rounded-2xl p-1 font-semibold px-3">
@@ -91,7 +86,7 @@ const CertifImg: React.FC<CertifImgProps> = ({ altText, imgTitle }) => {
       </button>
 
       {isModalOpen && (
-        <div className="fixed inset-0 flex items-center justify-center z-50 bg-[#FD7092]/5  0">
+        <div className="fixed inset-0 flex items-center justify-center z-50 bg-[#FD7092]/50">
           <div
             ref={modalRef}
             className="relative flex items-center justify-center bg-[#FD7092]/90 border-white border-2 rounded-xl p-4 w-4/5 lg:w-fit h-1/2 lg:h-3/4"

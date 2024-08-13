@@ -9,10 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "pinkImg": 'url("https://www.transparenttextures.com/patterns/fabric-plaid.png")',
+        "pinkImg": 'url("https://www.transparenttextures.com/patterns/groovepaper.png")',
       },
       backgroundColor: {
-        "pinkImgBg": "#ffe3f4"
+        "pinkImgBg": "#ffe3ed"
       },
       fontFamily: {
         'allan': ['Allan', 'sans-serif'],

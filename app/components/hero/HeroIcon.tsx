@@ -47,7 +47,7 @@ const HeroIcon: React.FC<HeroIconProps> = ({ icon}) => {
         <Image
           src={Icon}
           alt=""
-          className="h-[9px] w-[9px] md:h-[18px] md:w-[18px] lg:h-[36px] lg:w-[36px]"
+          className="h-[12px] md:h-[18px] lg:h-[24px] w-[12px] md:w-[18px] lg:w-[24px]"
         />
       </div>
     </div>

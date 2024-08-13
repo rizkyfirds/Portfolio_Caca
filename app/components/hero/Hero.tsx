@@ -13,7 +13,7 @@ const Hero = () => {
             <Image
               src={Profile}
               alt="Photo Profile"
-              className="h-[220px] md:h-[250px] lg:h-[450px] w-full px-3 md:px-4 lg:px-6"
+              className="h-[180px] md:h-[250px] lg:h-[330px] w-full px-3 md:px-4 lg:px-6"
             />
             <div className="absolute bottom-0 h-full w-full grid grid-rows-5 grid-flow-col gap-4">
               <div></div>
@@ -37,17 +37,17 @@ const Hero = () => {
           </div>
         </div>
         <div className="mx-auto w-fit ">
-          <p className="text-[#FD7092] sm:text-center md:text-left italic text-[15px] md:text-[25px] lg:text-[60px] font-bold font-allan sm:mt-4 md:mt-0">
+          <p className="text-[#FD7092] text-center md:text-left italic text-[15px] md:text-[25px] lg:text-[40px] font-bold font-allan mt-4 md:mt-0">
             😊 Hello!
           </p>
           <p className="text-[18px] md:text-[35px] lg:text-[44px] sm:text-center md:text-left font-bold text-[#3A3A3A] font-['Poppins']">
-            I am Salsabila <br className="sm:hidden lg:flex"/>
+            I am Salsabila <br className="hidden md:flex"/>
             Awwaliyyah Lestari
           </p>
-          <p className="text-[13px] lg:text-[34px] sm:text-center md:text-left italic font-bold font-['Allan'] text-[#3A3A3A]">
+          <p className="text-[13px] lg:text-[34px] text-center md:text-left italic font-bold font-['Allan'] text-[#3A3A3A]">
             Data Analyst
           </p>
-          <div className="flex sm:justify-center md:justify-start gap-x-[4px] lg:gap-x-[16px] my-4">
+          <div className="flex justify-center md:justify-start gap-x-[4px] lg:gap-x-[16px] my-4">
             <ButtonHero
               command="View Github"
               link="https://github.com/salsabilaawwaliyyah"

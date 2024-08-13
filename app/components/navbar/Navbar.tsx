@@ -21,7 +21,7 @@ const Navbar: React.FC<NavbarProps> = ({ setNavbarStat }) => {
       <div className="flex justify-between">
         <div className="flex gap-x-[8px]">
           <Image src={ProfileImg} alt="Photo Profile" />
-          <p className="my-auto text-[#FD7092] text-[10px] md:text-[13px] lg:text-[15px] font-semibold">
+          <p className="my-auto text-[#FD7092] text-[10px] md:text-[13px] font-semibold">
             Salsabila Awwaliyyah Lestari
           </p>
         </div>

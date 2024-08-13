@@ -7,6 +7,7 @@ import FoodRecipe from "../../assets/FoodRecipe.jpg";
 import FinalProject from "../../assets/FinalProject.jpg";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import { TbPointFilled } from "react-icons/tb";
+import { motion } from "framer-motion";
 
 interface PerProjectProps {
   title: string;
@@ -45,7 +46,7 @@ const PerProject: React.FC<PerProjectProps> = ({
   const image = getImage(imgTitle);
   return (
     <div
-      className={`bg-[#FFE5EC] w-[200px] md:w-[400px] lg:w-[${width}px] p-[12px] lg:p-[24px] pb-[65px] rounded-2xl relative`}
+      className={`bg-pinkImgBg bg-pinkImg w-[200px] md:w-[400px] lg:w-[${width}px] p-[12px] lg:p-[38px] pb-[65px] rounded-2xl relative`}
     >
       <Image src={image} alt={title} className="w-full mb-[12px] lg:mb-[24px]" />
       <p
@@ -68,21 +69,23 @@ const PerProject: React.FC<PerProjectProps> = ({
       </p>
       {tasks.map((task, index) => (
         <div key={index} className="flex font-medium mb-1">
-          <TbPointFilled className="h-fit w-3 lg:w-6 text-[4px] lg:text-[6px] mr-2" />
+          <TbPointFilled className="h-fit w-3 lg:w-4 my-auto text-[4px] lg:text-[6px] mr-2" />
           <p className="text-[10px] lg:text-[14px] text-justify w-full">{task}</p>
         </div>
       ))}
-      <a
+      <motion.a
+        whileHover={{ scale: 1.1 }}
+        transition={{ type: "spring", stiffness: 400, damping: 10 }}
         href={link}
         target="_blank"
         rel="noopener noreferrer"
         className="absolute bottom-0 right-0 m-[8px] lg:m-[14px] pt-[6px] lg:pt-[14px]"
       >
-        <div className="bg-[#FD7092] py-[12px] px-[24px] lg:py-[14px] lg:px-[32px] rounded-full">
-          <MdOutlineArrowOutward className="text-white" />
+        <div className="bg-[#FD7092] text-white hover:text-[#FD7092] hover:font-bold hover:bg-white py-[12px] px-[24px] lg:py-[14px] lg:px-[32px] rounded-full">
+          <MdOutlineArrowOutward className="" />
         </div>
-      </a>
-    </div>
+      </motion.a>
+    </div>  
   );
 };
 
