@@ -9,7 +9,7 @@ const Hero = () => {
     <div className="h-fit py-[24px] px-[15px] lg:px-[156px] lg:py-[60px]">
       <div className="h-fit md:flex justify-center gap-x-[30px] md:gap-x-[80px] lg:gap-x-[229px]">
         <div className="h-full w-fit md:order-1 mx-auto">
-          <div className="h-fit relative">
+          <div className="h-fit w-fit relative">
             <Image
               src={Profile}
               alt="Photo Profile"
