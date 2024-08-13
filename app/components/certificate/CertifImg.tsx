@@ -94,7 +94,7 @@ const CertifImg: React.FC<CertifImgProps> = ({ altText, imgTitle }) => {
         <div className="fixed inset-0 flex items-center justify-center z-50 bg-[#FD7092]/5  0">
           <div
             ref={modalRef}
-            className="relative flex items-center justify-center bg-[#FD7092]/90 border-white border-2 rounded-xl p-4 h-1/2 lg:h-3/4"
+            className="relative flex items-center justify-center bg-[#FD7092]/90 border-white border-2 rounded-xl p-4 w-4/5 lg:w-fit h-1/2 lg:h-3/4"
           >
             <button
               onClick={handleCloseModal}

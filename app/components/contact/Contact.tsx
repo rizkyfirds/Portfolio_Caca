@@ -127,7 +127,7 @@ const Contact = () => {
           </div>
           <div className="flex gap-x-2 py-1 text-[#FD7092] -bottom-0">
               <FaRegCopyright className=" my-auto text-sm " />
-              <p className="text-sm font-semibold ">
+              <p className="text-xs font-semibold ">
                 2024 Muhammad Rizky Firdaus
               </p>
             </div>
