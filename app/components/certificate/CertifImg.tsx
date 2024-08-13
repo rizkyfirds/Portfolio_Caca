@@ -89,7 +89,7 @@ const CertifImg: React.FC<CertifImgProps> = ({ altText, imgTitle }) => {
         <div className="fixed inset-0 flex items-center justify-center z-50 bg-[#FD7092]/50">
           <div
             ref={modalRef}
-            className="relative flex items-center justify-center bg-[#FD7092]/90 border-white border-2 rounded-xl p-4 w-4/5 lg:w-fit h-1/2 lg:h-3/4"
+            className="relative flex items-center justify-center bg-[#FD7092]/90 border-white border-2 rounded-xl p-4 w-11/12 md:w-4/5 lg:w-fit h-fit md:h-1/2 lg:h-3/4"
           >
             <button
               onClick={handleCloseModal}
@@ -97,7 +97,7 @@ const CertifImg: React.FC<CertifImgProps> = ({ altText, imgTitle }) => {
             >
               <IoClose className="text-2xl" />
             </button>
-            <Image src={image} alt={altText} className="w-fit h-full" />
+            <Image src={image} alt={altText} className="w-fit h-fit md:h-full" />
           </div>
         </div>
       )}
